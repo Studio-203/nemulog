@@ -1,0 +1,110 @@
+/* ネムログのサポート・プライバシーポリシーのページ。外部のフォントやスクリプトは読み込まない */
+:root {
+  --bg: #f6f7fb;
+  --surface: #ffffff;
+  --text: #1a1d2b;
+  --text-secondary: #5a6075;
+  --border: #e3e6ef;
+  --accent: #5b6cff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #070b1a;
+    --surface: #111729;
+    --text: #e8eaf3;
+    --text-secondary: #9aa1b8;
+    --border: #1f2740;
+    --accent: #8e9bff;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP",
+    "Yu Gothic", sans-serif;
+  line-height: 1.8;
+  -webkit-text-size-adjust: 100%;
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px 16px 64px;
+}
+
+header {
+  margin-bottom: 32px;
+}
+
+.app-name {
+  margin: 0;
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+h1 {
+  margin: 4px 0 0;
+  font-size: 28px;
+  line-height: 1.4;
+}
+
+h2 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+section {
+  margin-top: 16px;
+  padding: 20px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+}
+
+p,
+ul {
+  margin: 0;
+}
+
+p + p,
+p + ul,
+ul + p {
+  margin-top: 8px;
+}
+
+ul {
+  padding-left: 1.4em;
+}
+
+.lead {
+  color: var(--text-secondary);
+}
+
+a {
+  color: var(--accent);
+}
+
+nav {
+  margin-top: 16px;
+}
+
+footer {
+  margin-top: 40px;
+  color: var(--text-secondary);
+  font-size: 13px;
+  text-align: center;
+}
+
+.date {
+  margin-top: 16px;
+}
